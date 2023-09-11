@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace AccountRegistration
+{
+   
+    public partial class FrmConfirm : Form
+    {
+        public FrmConfirm()
+        {
+            InitializeComponent();
+            DelProgram = new DelegateText(StudentInfoClass.GetProgram);
+            DelFirstName = new DelegateText(StudentInfoClass.GetFirstName);
+        }
+
+        private DelegateText DelProgram, DelLastName, DelFirstName, DelMiddleName, DelAddress;
+        private DelegateNumber DelNumAge, DelNumContactNo, DelStudNo;
+    }
+}
