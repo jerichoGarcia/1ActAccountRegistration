@@ -11,11 +11,6 @@ namespace AccountRegistration
         }
 
 
-        private void FrmRegistration_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnNext_Click(object sender, EventArgs e)
         { 
             StudentInfoClass.Program = cmbProgram.Text.ToString();
