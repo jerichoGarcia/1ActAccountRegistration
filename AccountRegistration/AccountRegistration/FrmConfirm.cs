@@ -13,7 +13,10 @@ namespace AccountRegistration
    
     public partial class FrmConfirm : Form
     {
-        public FrmConfirm()
+        private DelegateText DelProgram, DelLastName, DelFirstName, DelMiddleName, DelAddress;
+        private DelegateNumber DelNumAge, DelNumContactNo, DelStudNo;
+        
+         public FrmConfirm()
         {
             InitializeComponent();
             DelProgram = new DelegateText(StudentInfoClass.GetProgram);
@@ -26,7 +29,29 @@ namespace AccountRegistration
             DelStudNo = new DelegateNumber(StudentInfoClass.GetStudentNo);
         }
 
-        private DelegateText DelProgram, DelLastName, DelFirstName, DelMiddleName, DelAddress;
-        private DelegateNumber DelNumAge, DelNumContactNo, DelStudNo;
+        private void FrmConfirm_Load(object sender, EventArgs e)
+        {
+
+            lblProgram.Text = DelProgram(StudentInfoClass.Program);
+            lblLname.Text = DelLastName(StudentInfoClass.LastName);
+            lblFname.Text = DelFirstName(StudentInfoClass.FirstName);
+            lblMidName.Text = DelMiddleName(StudentInfoClass.MiddleName);
+            lblAddress.Text = DelAddress(StudentInfoClass.Address);
+            lblAge.Text = DelNumAge(StudentInfoClass.Age).ToString();
+            lblStudNo.Text = DelStudNo(StudentInfoClass.StudentNo).ToString();
+            lblContactNo.Text = DelNumContactNo(StudentInfoClass.ContactNo).ToString();
+            
+        }
+      
+        private void FrmConfirm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
     }
 }

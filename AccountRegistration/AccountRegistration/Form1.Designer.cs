@@ -143,6 +143,7 @@
             this.txtStudNo.Name = "txtStudNo";
             this.txtStudNo.Size = new System.Drawing.Size(253, 36);
             this.txtStudNo.TabIndex = 8;
+            this.txtStudNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtStudNo_KeyPress);
             // 
             // txtLname
             // 
@@ -179,6 +180,7 @@
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(253, 36);
             this.txtAge.TabIndex = 12;
+            this.txtAge.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAge_KeyPress);
             // 
             // txtContNo
             // 
@@ -188,6 +190,7 @@
             this.txtContNo.Name = "txtContNo";
             this.txtContNo.Size = new System.Drawing.Size(254, 36);
             this.txtContNo.TabIndex = 13;
+            this.txtContNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContNo_KeyPress);
             // 
             // cmbProgram
             // 
@@ -196,7 +199,7 @@
             this.cmbProgram.Location = new System.Drawing.Point(371, 106);
             this.cmbProgram.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbProgram.Name = "cmbProgram";
-            this.cmbProgram.Size = new System.Drawing.Size(253, 36);
+            this.cmbProgram.Size = new System.Drawing.Size(333, 36);
             this.cmbProgram.TabIndex = 14;
             // 
             // txtAddress
@@ -248,6 +251,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmRegistration";
             this.Text = "FrmRegistration";
+            this.Load += new System.EventHandler(this.FrmRegistration_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

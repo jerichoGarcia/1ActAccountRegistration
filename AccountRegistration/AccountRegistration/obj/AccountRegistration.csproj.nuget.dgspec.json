@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jericho\\Source\\Repos\\1ActAccountRegistration\\AccountRegistration\\AccountRegistration\\AccountRegistration.csproj": {}
+    "C:\\Users\\jericho\\source\\repos\\1ActAccountRegistration\\AccountRegistration\\AccountRegistration\\AccountRegistration.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jericho\\Source\\Repos\\1ActAccountRegistration\\AccountRegistration\\AccountRegistration\\AccountRegistration.csproj": {
+    "C:\\Users\\jericho\\source\\repos\\1ActAccountRegistration\\AccountRegistration\\AccountRegistration\\AccountRegistration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jericho\\Source\\Repos\\1ActAccountRegistration\\AccountRegistration\\AccountRegistration\\AccountRegistration.csproj",
+        "projectUniqueName": "C:\\Users\\jericho\\source\\repos\\1ActAccountRegistration\\AccountRegistration\\AccountRegistration\\AccountRegistration.csproj",
         "projectName": "AccountRegistration",
-        "projectPath": "C:\\Users\\jericho\\Source\\Repos\\1ActAccountRegistration\\AccountRegistration\\AccountRegistration\\AccountRegistration.csproj",
+        "projectPath": "C:\\Users\\jericho\\source\\repos\\1ActAccountRegistration\\AccountRegistration\\AccountRegistration\\AccountRegistration.csproj",
         "packagesPath": "C:\\Users\\jericho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jericho\\Source\\Repos\\1ActAccountRegistration\\AccountRegistration\\AccountRegistration\\obj\\",
+        "outputPath": "C:\\Users\\jericho\\source\\repos\\1ActAccountRegistration\\AccountRegistration\\AccountRegistration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jericho\\AppData\\Roaming\\NuGet\\NuGet.Config",
